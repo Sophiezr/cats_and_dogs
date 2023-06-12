@@ -1,0 +1,48 @@
+****** Mean Dice Coefficient ******
+0.76269
+
+****** Breed Classification Report ******
+Classification Report:
+                            precision    recall  f1-score   support
+
+                Abyssinian       0.16      0.57      0.25         7
+                    Bengal       0.14      0.67      0.24         3
+                    Birman       0.00      0.00      0.00         5
+                    Bombay       0.12      0.25      0.17         4
+         British_Shorthair       0.67      0.25      0.36         8
+              Egyptian_Mau       0.80      0.57      0.67         7
+                Maine_Coon       0.25      0.17      0.20         6
+                   Persian       0.50      0.30      0.37        10
+                   Ragdoll       0.29      0.20      0.24        10
+              Russian_Blue       0.33      0.42      0.37        12
+                   Siamese       0.00      0.00      0.00         8
+                    Sphynx       0.19      0.80      0.31         5
+          american_bulldog       0.14      0.25      0.18         4
+ american_pit_bull_terrier       0.00      0.00      0.00         2
+              basset_hound       0.25      0.40      0.31         5
+                    beagle       0.43      0.60      0.50         5
+                     boxer       1.00      0.43      0.60         7
+                 chihuahua       0.25      0.11      0.15         9
+    english_cocker_spaniel       0.00      0.00      0.00         4
+            english_setter       0.67      0.22      0.33         9
+        german_shorthaired       0.25      0.17      0.20         6
+            great_pyrenees       0.67      0.50      0.57         4
+                  havanese       0.20      0.29      0.24         7
+             japanese_chin       0.00      0.00      0.00         8
+                  keeshond       0.50      0.67      0.57         3
+                leonberger       0.67      0.25      0.36         8
+        miniature_pinscher       0.50      0.33      0.40         3
+              newfoundland       0.00      0.00      0.00         5
+                pomeranian       0.50      0.20      0.29         5
+                       pug       0.50      0.50      0.50         4
+             saint_bernard       0.50      0.25      0.33         4
+                   samoyed       0.25      0.50      0.33         4
+          scottish_terrier       0.33      0.11      0.17         9
+                 shiba_inu       0.00      0.00      0.00         2
+staffordshire_bull_terrier       0.00      0.00      0.00         3
+           wheaten_terrier       0.23      0.30      0.26        10
+         yorkshire_terrier       0.17      0.25      0.20         4
+
+                  accuracy                           0.28       219
+                 macro avg       0.31      0.28      0.26       219
+              weighted avg       0.34      0.28      0.27       219
