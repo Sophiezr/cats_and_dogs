@@ -104,8 +104,8 @@ def mean_dice_coefficient(y_true_list, y_pred_list):
     return mean_dice
 
 
-def segmentations_to_masks(seg, threshold=0.5):
-    y_seg_preds = [(seg > threshold).astype(np.uint8) for seg in seg_preds]
+def segmentations_to_masks(seg_pred, threshold=0.5):
+    y_seg_preds = [(seg > threshold).astype(np.uint8) for seg in seg_pred]
     return y_seg_preds
 
 
@@ -151,8 +151,6 @@ if __name__ == "__main__":
     #  way, we can easily tweak them in the config file without the need to hardcode them.
     # parameters
     NUM_CLASSES = 37
-
-    epochs = [50, 30]
     img_size = (256, 256)
 
     # input paths
@@ -206,7 +204,7 @@ if __name__ == "__main__":
                                                                                               classification_criterion)
     print(f'Test loss: {test_epoch_loss:.5f}')
     y_seg_masks = segmentations_to_masks(seg_preds, threshold=0.5)
-
+    # write_mask_to_file(y_seg_masks[0])
     metrics(y_seg_masks, target_mask, class_target, class_preds, breed_class)
 
     print()
